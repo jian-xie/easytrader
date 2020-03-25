@@ -10,6 +10,8 @@ def create(broker):
         return CommonConfig
     if broker == "wk":
         return WK
+    if broker == "hait":
+        return HaiT
     raise NotImplementedError
 
 
@@ -60,8 +62,8 @@ class CommonConfig:
 
     CANCEL_ENTRUST_ENTRUST_FIELD = "合同编号"
     CANCEL_ENTRUST_GRID_LEFT_MARGIN = 50
-    CANCEL_ENTRUST_GRID_FIRST_ROW_HEIGHT = 30
-    CANCEL_ENTRUST_GRID_ROW_HEIGHT = 16
+    CANCEL_ENTRUST_GRID_FIRST_ROW_HEIGHT = 37
+    CANCEL_ENTRUST_GRID_ROW_HEIGHT = 20
 
     AUTO_IPO_SELECT_ALL_BUTTON_CONTROL_ID = 1098
     AUTO_IPO_BUTTON_CONTROL_ID = 1006
@@ -135,3 +137,14 @@ class GJ(CommonConfig):
 
 class WK(HT):
     pass
+
+
+class HaiT(CommonConfig):
+    BALANCE_CONTROL_ID_GROUP = {
+        "资金余额": 1012,
+        "可用金额": 1016,
+        "可取金额": 1017,
+        # "股票市值": 1014,
+        "冻结金额": 1013,
+        "总资产": 1015,
+    }

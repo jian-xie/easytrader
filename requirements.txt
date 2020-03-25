@@ -12,11 +12,11 @@ flask==1.0.2
 idna==2.7
 itsdangerous==0.24
 jinja2==2.10
-lxml==4.2.3
+lxml==4.4.3
 markupsafe==1.0
 numpy==1.15.0; python_version >= '2.7'
 pandas==0.23.3
-pillow==5.2.0
+pillow==6.2.2
 pyperclip==1.6.4
 pyquery==1.4.0; python_version != '3.0.*'
 pytesseract==0.2.4
@@ -29,4 +29,4 @@ rqopen-client==0.0.5
 six==1.11.0
 urllib3==1.23; python_version != '3.1.*'
 werkzeug==0.14.1
-win32gui
+pywin32

@@ -151,6 +151,12 @@ class ClientTrader(IClientTrader):
         return self._get_grid_data(self._config.COMMON_GRID_CONTROL_ID)
 
     @property
+    def cflows_details(self):
+        self._switch_left_menus(["查询[F4]", "资金明细"])
+
+        return self._get_grid_data(self._config.COMMON_GRID_CONTROL_ID)
+
+    @property
     def today_trades(self):
         self._switch_left_menus(["查询[F4]", "当日成交"])
 
